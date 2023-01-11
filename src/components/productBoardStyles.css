@@ -107,7 +107,7 @@
     align-items: center;
     text-align: center;
     height: 220px;
-    background-color: rgb(196, 196, 196);
+    background-color: rgb(224, 224, 224);
 }
 
 #storePic {
@@ -166,12 +166,17 @@ select {
     margin-bottom: 20px;
 }
 
+.image {
+    margin-right: 220px;
+    font-size: 15px;
+}
+
 .submitBtn {
     width: 100px;
     padding-right: 20px;
     border: 0;
     text-align: center;
-    background-color: grey;
+    background-color: rgb(181, 181, 181);
     margin-right: 10px;
     margin-left: 50px;
 }
@@ -180,7 +185,7 @@ select {
     width: 100px;
     padding-right: 20px;
     text-align: center;
-    background-color: grey;
+    background-color: rgb(181, 181, 181);
     border: 0;
 }
 
@@ -199,6 +204,37 @@ select {
 }
 
 .productList {
-    background-color: green;
+    /* outline: 1px solid red; */
     height: 500px;
+    width: 100%;
+}
+
+.productList h3 {
+    padding-left: 40px;
+}
+
+.headings {
+    height: 50px;
+    background-color: grey;
+}
+
+.tableRow {
+    margin-top: 30px;
+    padding-top: 20px;
+    height: 50px;
+    border: 0;
+    background-color: aliceblue;
+}
+
+table {
+    background-color: white;
+    text-align: center;
+    /* outline: 1px solid red; */
+    margin-top: 10px;
+}
+
+th {
+    width: 200px;
+    background-color: rgb(206, 206, 206);
+    /* outline: 1px solid red; */
 }

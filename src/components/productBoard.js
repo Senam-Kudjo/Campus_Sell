@@ -95,7 +95,28 @@ const ProductBoard = () => {
         </div>
 
         <div className="productList">
-          <div className="headings"></div>
+          <h3>Product List</h3>
+          {/* <div className="headings"> */}
+          <table>
+            <tr className="tableRow">
+              <th>Product Name</th>
+              <th>Category</th>
+              <th>Price</th>
+              <th>Quantity</th>
+              <th>Created Time</th>
+              <th>Edit</th>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>{/* use DOM MANIPULATION TO MAKE THE INSERTIONS */}</tr>
+          </table>
+          {/* </div> */}
         </div>
       </section>
     </section>
