@@ -5,7 +5,7 @@ import Board from "../components/Board";
 const products = () => {
   return (
     <div>
-      <Board />
+      <productBoard />
     </div>
   );
 };
