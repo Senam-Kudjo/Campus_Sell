@@ -1,13 +1,13 @@
 import React from "react";
 import "../index.css";
-import Board from "../components/Board";
+import ProductBoard from "../components/productBoard";
 
-const products = () => {
+const Products = () => {
   return (
     <div>
-      <productBoard />
+      <ProductBoard />
     </div>
   );
 };
 
-export default products;
+export default Products;
