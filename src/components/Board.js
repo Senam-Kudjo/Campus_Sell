@@ -10,48 +10,12 @@ import box from "../assets/anime1.json";
 import Analytics from "../assets/analytics.json";
 
 import "./BoardStyles.css";
+import NavBar from "./NavBar";
 
 const Board = () => {
   return (
     <section className="hero">
-      <div className="innerBoard">
-        <Lottie animationData={box} style={{ width: 80, marginLeft: 100 }} />
-        <h1>CampusSell</h1>
-        {/* <img src={Logo} className="logoImage" /> */}
-        <ul>
-          <li>
-            {/* <button className="active"> */}
-            <GrOverview className="iconPad" size={20} color={"red"} />
-            <Link to={"/"} className="activeTextTab">
-              Overview
-            </Link>
-            {/* </button> */}
-          </li>
-          <li>
-            {/* <button> */}
-            <MdOutlineProductionQuantityLimits size={20} />
-            <Link to={"/products"}>Products</Link>
-            {/* </button> */}
-          </li>
-          <li>
-            {/* <button> */}
-            <TbMessages size={20} />
-            <Link to={"/inbox"}>Inbox</Link>
-            {/* </button> */}
-          </li>
-          <li>
-            {/* <button> */}
-            <FcSettings size={20} />
-            <Link to={"/settings"}>Settings</Link>
-            {/* </button> */}
-          </li>
-        </ul>
-        <div className="downloadButton">
-          <h3 style={{ color: "white", textAlign: "center", padding: 11 }}>
-            Download Our App
-          </h3>
-        </div>
-      </div>
+      <NavBar />
 
       {/* THE OTHER SIDE OF THE BOARD */}
 

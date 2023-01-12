@@ -238,3 +238,7 @@ th {
     background-color: rgb(206, 206, 206);
     /* outline: 1px solid red; */
 }
+
+@media screen and (max-width:799){
+    
+}
