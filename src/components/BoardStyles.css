@@ -1,262 +1,247 @@
-.hero {
-    top: 50px;
-    left: 130px;
-    width: 85%;
-    height: 100%;
-    position: relative;
-    background-color: rgb(223, 223, 223);
-    border-radius: 10px;
-    display: flex;
-    flex-direction: row;
-}
+ .hero {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-direction: row;
+     height: 100vh;
+     width: 100%;
+ }
 
+ .adminTab {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     width: 25%;
+     height: 100vh;
+     background-color: rgb(160, 160, 160);
+     flex-direction: column;
+ }
 
-/* FIRSTTTTTTTTTT BOARDDDDDDDDDDDDDDD */
-.innerBoard {
-    padding-top: 20px;
-    text-align: center;
-    border-radius: 10px;
-    flex-direction: column;
-    display: flex;
-    padding-left: 10px;
-    width: 25%;
-}
+ .adminTab h3 {
+     margin-bottom: 50px;
+     color: orange;
+     font-size: 30px;
+     margin-top: 5px;
+ }
 
-.innerBoard h1 {
-    font-size: 30px;
-    letter-spacing: 3px;
-    color: orange;
-}
+ li {
+     outline: 0;
+     padding: 30px;
+ }
 
-.logoImage {
-    width: 150px;
-    height: 250px;
-    padding-bottom: 20px;
-}
+ ul li a {
+     color: black;
+     outline: 0;
+     padding: 10px;
+     font-size: 25px;
+     transition: 0.3s;
 
-.innerBoard ul li {
-    justify-content: space-between;
-    align-items: center;
-    text-align: center;
-    padding-top: 50px;
-}
+ }
 
-.innerBoard li a {
-    font-size: 20px;
-    font-weight: bold;
-    color: grey;
-    padding: 10px;
-    /* background-color: aquamarine; */
-    justify-content: center;
-    text-align: center;
-    align-items: center;
-}
+ ul li a:hover {
+     font-size: 28px;
+     color: aliceblue;
+     transition: 0.3s;
+ }
 
-.innerBoard ul li a:hover {
-    font-size: 20px;
-    color: orange;
-}
+ ul li a.activeTab {
+     font-weight: bold;
+     color: white;
+     font-size: 28px;
+ }
 
-.innerBoard li a.activeTextTab {
-    color: black;
-    font-size: 25px;
-}
+ .adminTab button {
+     cursor: pointer;
+     margin-top: 60px;
+     height: 40px;
+     width: 200px;
+     border-radius: 15px;
+     border: 0;
+     font-size: 20px;
+     font-weight: bold;
+     color: white;
+     background-color: orange;
+     margin-bottom: 60px;
+     outline: 0;
+     box-shadow: 2px 3px 1px rgb(255, 90, 30);
+ }
 
+ /* THE RIGHT SIDE OF THE DIVIDEND WHERE INFORMATION CONCERNING THE SELECTED TAB IS DISPLAYED */
 
+ .tabInfo {
+     justify-content: center;
+     align-items: center;
+     padding: 50px;
+     width: 80%;
+     height: 100vh;
+     background-color: white;
+     box-shadow: 1px 1px 1px grey;
+     overflow: hidden;
+     overflow-y: scroll;
+     flex-direction: column;
+ }
 
-.iconPad {
-    justify-content: space-between;
-}
+ ::-webkit-scrollbar {
+     width: 0;
+ }
 
-.downloadButton {
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    width: 200px;
-    height: 35px;
-    border-radius: 10px;
-    background-color: rgb(0, 74, 114);
-    box-shadow: 2px 2px 1px grey;
-    margin-top: 100px;
-    margin-left: 40px;
-}
+ .firstRow {
+     display: flex;
+     flex-direction: row;
+     align-items: center;
+     justify-content: center;
+     width: 100%;
+     padding: 10px;
+     margin-bottom: 30px;
+ }
 
-/* ENDDDDDD OF FIRSTTTTT BOARDDDDDD */
-.boardTwo {
-    background-color: white;
-    top: 50px;
-    width: 90%;
-    height: 90vh;
-    border-top-left-radius: 0;
-    border-top-right-radius: 20px;
-    border-bottom-right-radius: 20px;
-    border-bottom-left-radius: 0px;
-    overflow: hidden;
-    overflow-y: scroll;
-    align-items: center;
-    justify-content: center;
-}
+ .fr {
+     justify-content: center;
+     align-items: center;
+     display: flex;
+     text-align: center;
+     border-radius: 10px;
+     margin: 30px;
+     height: 70px;
+     width: 25%;
+     background-color: white;
+     box-shadow: 5px 1px 8px grey;
+ }
 
-::-webkit-scrollbar {
-    width: 0;
-}
+ /* the start of the second row of the tabInfo */
+ .secondRow {
+     /* display: flex; */
+     border-radius: 5px;
+     justify-content: center;
+     align-items: center;
+     text-align: center;
+     margin-top: 30px;
+     height: 150px;
+     width: 100%;
+     box-shadow: 5px 5px 1px grey;
+     background-image: repeating-radial-gradient(farthest-corner at 40px 20px, white 30%, aquamarine 40%);
+ }
 
-.firstRow {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding: 50px;
-    width: 100%;
-}
+ .banner {
+     display: flex;
+     flex-direction: row;
+     font-size: 70px;
+     font-weight: bolder;
+     justify-content: center;
+     align-items: center;
+     height: 100%;
+ }
 
-.frTabs {
-    width: 250px;
-    height: 70px;
-    background-color: white;
-    box-shadow: 0.7px 0.7px 1px 1px grey;
-    border-radius: 30px;
-    opacity: 1;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-}
+ /* the third row of the tabInfo */
 
+ .thirdRow {
+     display: flex;
+     flex-direction: column;
+     text-align: left;
+     width: 100%;
+     margin-top: 100px;
 
-.secondRow {
-    justify-content: space-between;
-    align-items: center;
-    margin-left: 50px;
-    width: 100%;
-    margin-top: 25px;
-    display: flex;
-    flex-direction: row;
-}
+ }
 
-.srTab {
-    width: 90%;
-    height: 200px;
-    background-image: repeating-radial-gradient(farthest-corner at 40px 20px, white 30%, aquamarine 40%);
-    border-radius: 10px;
-    align-items: center;
-    justify-content: center;
-    align-self: center;
-    display: flex;
-    flex-direction: row;
-    padding-right: 100px;
-}
+ .orderTrackerTab {
+     display: flex;
+     flex-direction: row;
+     gap: 60px;
+ }
 
-.srTab h1 {
-    font-size: 45px;
-    color: black;
-    text-align: center;
-}
+ .thirdRow h3 {
+     font-weight: 600;
+ }
 
-.thirdRow {
-    /* justify-content: space-between; */
-    align-items: center;
-    margin: 50px;
-    text-align: left;
-}
+ .trTabs {
+     padding: 10px;
+     width: 200px;
+     text-align: center;
+     border-radius: 5px;
+     margin-top: 20px;
+     background-color: white;
+     box-shadow: 5px 1px 8px grey;
+ }
 
-.orderTrackerTab {
-    display: flex;
-    flex-direction: row;
-    gap: 10px;
-    margin-top: 10px;
-}
+ .trTabs span {
+     text-align: center;
+ }
 
-.thirdRow h3 {
-    font-weight: 600;
-}
+ .trTabs h1 {
+     font-size: 60px;
+     margin-bottom: 10px;
+     margin-top: 13px;
+ }
 
-.trTabs {
-    /* background-color: rgb(200, 200, 200); */
-    width: 20%;
-    height: 100px;
-    text-align: center;
-    flex-direction: row;
-    border-radius: 5px;
-    justify-content: center;
-    align-items: center;
-    border-width: 5px;
-    border-color: black;
-}
+ /* START OF THE FOURTH ROW/LINE OF THE INFORTAB */
+ .fourthRow {
+     display: flex;
+     flex-direction: column;
+     margin-top: 100px;
+     width: 100%;
+     text-align: left;
+ }
 
-.trTabs span {
-    text-align: center;
-    align-items: center;
-}
+ .fourthRow h3 {
+     font-weight: 600;
+ }
 
-.trTabs h1 {
-    font-size: 60px;
-    margin-bottom: 10px;
-    margin-top: 13px;
-}
+ .topProductsTab {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     flex-direction: row;
+     gap: 20px;
+     margin-top: 15px;
+ }
 
-.fourthRow {
-    /* justify-content: space-between; */
-    align-items: center;
-    margin: 50px;
-    text-align: left;
-}
+ .frtTabs {
+     background-color: white;
+     box-shadow: 5px 1px 8px grey;
+     width: 250px;
+     height: 100px;
+     text-align: left;
+     border-radius: 5px;
+     transition: 0.3s;
+ }
 
-.fourthRow h3 {
-    font-weight: 600;
-}
+ .frtTabs:hover {
+     width: 260px;
+     height: 105px;
+     transition: ease-in-out 0.3s;
+ }
 
-.topProductsTab {
-    display: flex;
-    flex-direction: row;
-    gap: 10px;
-    margin-top: 10px;
-}
+ /* FITH ROW */
+ .fifthRow {
+     align-items: center;
+     text-align: left;
+     margin-top: 80px;
+ }
 
-.frtTabs {
-    background-color: rgb(200, 200, 200);
-    width: 20%;
-    height: 100px;
-    text-align: left;
-    flex-direction: row;
-    border-radius: 5px;
-}
+ .fifthRow h3 {
+     font-weight: 600;
+     margin-bottom: 20px;
+ }
 
-.frtTabs:hover {
-    width: 21%;
-    height: 105px;
-    transition: ease-in-out 0.5s;
-}
+ .recentSalesTab {
+     gap: 10px;
+ }
 
-/* FITH ROW */
-.fifthRow {
-    align-items: center;
-    margin: 50px;
-    text-align: left;
-}
+ .fifthTabs {
+     background-color: white;
+     width: 100%;
+     height: 100px;
+     text-align: left;
+     flex-direction: row;
+     transition: 0.3s;
+     border-radius: 20px;
+     margin-top: 15px;
+     box-shadow: 1px 1px 4px grey;
+ }
 
-.fifthRow h3 {
-    font-weight: 600;
-}
-
-.recentSalesTab {
-    gap: 10px;
-    margin-top: 10px;
-}
-
-.fifthTabs {
-    background-color: white;
-    width: 100%;
-    height: 100px;
-    text-align: left;
-    flex-direction: row;
-    border-radius: 20px;
-    margin-top: 5px;
-    box-shadow: 1px 1px 4px 1px rgb(206, 206, 206);
-}
-
-.fifthTabs:hover {
-    height: 110px;
-    width: 102%;
-    margin-bottom: 10px;
-    transition: ease-in-out 0.5s;
-}
+ .fifthTabs:hover {
+     height: 110px;
+     width: 102%;
+     margin-bottom: 10px;
+     transition: ease-in-out 0.3s;
+ }

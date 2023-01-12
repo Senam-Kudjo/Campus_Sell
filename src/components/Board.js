@@ -10,40 +10,67 @@ import box from "../assets/anime1.json";
 import Analytics from "../assets/analytics.json";
 
 import "./BoardStyles.css";
-import NavBar from "./NavBar";
 
 const Board = () => {
   return (
     <section className="hero">
-      <NavBar />
+      <div className="adminTab">
+        <Lottie animationData={box} style={{ width: 80 }} />
+        <h3>Campus Mall</h3>
 
-      {/* THE OTHER SIDE OF THE BOARD */}
+        <div>
+          <ul>
+            <li>
+              <GrOverview size={22} color={"red"} />
+              <Link to={"/"} className="activeTab">
+                Overview
+              </Link>
+            </li>
 
-      <section className="boardTwo">
-        {/* fr = First Row */}
-        <div className="firstRow">
-          <div className="frTabs"> </div>
-          <div className="frTabs"> </div>
-          <div className="frTabs"> </div>
+            <li>
+              <MdOutlineProductionQuantityLimits size={22} />
+              <Link to={"/products"}>Products</Link>
+            </li>
+
+            <li>
+              <TbMessages size={22} />
+              <Link to={"/inbox"}>Inbox</Link>
+            </li>
+
+            <li>
+              <FcSettings size={22} />
+              <Link to={"/settings"}>Settings</Link>
+            </li>
+          </ul>
         </div>
-        {/* END OF THE FIRST ROW */}
+        <button>Download Our App</button>
+      </div>
 
-        {/* sr = Second Row */}
+      <div className="tabInfo">
+        {/* the first row/line */}
+        <div className="firstRow">
+          {/* fr = firstRow */}
+          <div className="fr">g</div>
+          <div className="fr">g</div>
+          <div className="fr">g</div>
+        </div>
+
+        {/* second row/line */}
         <div className="secondRow">
-          <div className="srTab">
+          <div className="banner">
             <Lottie
               animationData={Analytics}
               style={{
-                width: 310,
-                height: 240,
-                justifyContent: "center",
-                alignItems: "center",
+                width: 200,
+                height: 150,
+                marginRight: 50,
               }}
             />
-            <h1>Know How Your Business is Performing</h1>
+            Know How Your
+            <br />
+            Business Is Faring
           </div>
         </div>
-        {/* END OF THE SECOND ROW */}
 
         {/* START OF THIRD ROW */}
         {/* tr = third Row */}
@@ -79,6 +106,7 @@ const Board = () => {
             <div className="frtTabs"></div>
             <div className="frtTabs"></div>
             <div className="frtTabs"></div>
+            <div className="frtTabs"></div>
           </div>
         </div>
         {/* END OF THE FOURTH ROW */}
@@ -95,7 +123,7 @@ const Board = () => {
           </div>
         </div>
         {/* END OF THE FIFTH ROW */}
-      </section>
+      </div>
     </section>
   );
 };

@@ -1,0 +1,242 @@
+import React from "react";
+import { Link } from "react-router-dom";
+import Logo from "../assets/logo.png";
+import { GrOverview } from "react-icons/gr";
+import { MdOutlineProductionQuantityLimits } from "react-icons/md";
+import { TbMessages } from "react-icons/tb";
+import { FcSettings } from "react-icons/fc";
+import Lottie from "lottie-react";
+import box from "../assets/anime1.json";
+import Analytics from "../assets/analytics.json";
+
+import "./BoardStyles.css";
+
+const Board = () => {
+  return (
+    <section className="hero">
+      <div className="innerBoard">
+        <Lottie animationData={box} style={{ width: 80, marginLeft: 100 }} />
+        <h1>CampusSell</h1>
+        <ul>
+
+          <li>
+            <GrOverview className="iconPad" size={20} color={"red"} />
+            <Link to={"/"} className="activeTextTab">
+              Overview
+            </Link>
+          </li>
+
+          <li>
+            <MdOutlineProductionQuantityLimits size={20} />
+            <Link to={"/products"}>Products</Link>
+          </li>
+
+          <li>
+            <TbMessages size={20} />
+            <Link to={"/inbox"}>Inbox</Link>
+          </li>
+
+          <li>
+            <FcSettings size={20} />
+            <Link to={"/settings"}>Settings</Link>
+          </li>
+          
+        </ul>
+        <div className="downloadButton">Download Our App</div>
+      </div>
+
+      {/* THE OTHER SIDE OF THE BOARD */}
+
+      <section className="boardTwo">
+        {/* fr = First Row */}
+        <div className="firstRow">
+          <div className="frTabs"> </div>
+          <div className="frTabs"> </div>
+          <div className="frTabs"> </div>
+        </div>
+        {/* END OF THE FIRST ROW */}
+
+        {/* sr = Second Row */}
+        <div className="secondRow">
+          <div className="srTab">
+            <Lottie
+              animationData={Analytics}
+              style={{
+                width: 310,
+                height: 240,
+                justifyContent: "center",
+                alignItems: "center",
+              }}
+            />
+            <h1>Know How Your Business is Performing</h1>
+          </div>
+        </div>
+        {/* END OF THE SECOND ROW */}
+
+        {/* START OF THIRD ROW */}
+        {/* tr = third Row */}
+        <div className="thirdRow">
+          <h3>Order Tracker</h3>
+          <div className="orderTrackerTab">
+            <div className="trTabs">
+              <h1>12</h1>
+              <span> New Orders</span>
+            </div>
+            <div className="trTabs">
+              <h1>8</h1>
+              <span> In-Progress</span>
+            </div>
+            <div className="trTabs">
+              <h1>13</h1>
+              <span> Shipped</span>
+            </div>
+            <div className="trTabs">
+              <h1>3</h1>
+              <span> Failed</span>
+            </div>
+          </div>
+        </div>
+        {/* END OF THE THIRD ROW */}
+
+        {/* START OF FOURTH ROW */}
+        {/* fr = fourth Row */}
+        <div className="fourthRow">
+          <h3>Performing Products</h3>
+          <div className="topProductsTab">
+            <div className="frtTabs"></div>
+            <div className="frtTabs"></div>
+            <div className="frtTabs"></div>
+            <div className="frtTabs"></div>
+          </div>
+        </div>
+        {/* END OF THE FOURTH ROW */}
+
+        {/* START OF FIFTH ROW */}
+        {/* fitr = fifth Row */}
+        <div className="fifthRow">
+          <h3>Recent Sales</h3>
+          <div className="recentSalesTab">
+            <div className="fifthTabs"></div>
+            <div className="fifthTabs"></div>
+            <div className="fifthTabs"></div>
+            <div className="fifthTabs"></div>
+          </div>
+        </div>
+        {/* END OF THE FIFTH ROW */}
+      </section>
+    </section>
+  );
+};
+
+export default Board;
+
+
+<section className="hero">
+      <div className="innerBoard">
+        <Lottie animationData={box} style={{ width: 80, marginLeft: 100 }} />
+        <h1>CampusSell</h1>
+        {/* <img src={Logo} className="logoImage" /> */}
+        <ul>
+          <li>
+            {/* <button className="active"> */}
+            <GrOverview className="iconPad" size={20} color={"red"} />
+            <Link to={"/"}>Overview</Link>
+            {/* </button> */}
+          </li>
+          <li>
+            {/* <button> */}
+            <MdOutlineProductionQuantityLimits size={20} />
+            <Link to={"/products"} className="activeTextTab">
+              Products
+            </Link>
+            {/* </button> */}
+          </li>
+          <li>
+            {/* <button> */}
+            <TbMessages size={20} />
+            <Link to={"/inbox"}>Inbox</Link>
+            {/* </button> */}
+          </li>
+          <li>
+            {/* <button> */}
+            <FcSettings size={20} />
+            <Link to={"/settings"}>Settings</Link>
+            {/* </button> */}
+          </li>
+        </ul>
+        <div className="downloadButton">
+          <h3 style={{ color: "white", textAlign: "center", padding: 11 }}>
+            Download Our App
+          </h3>
+        </div>
+      </div>
+
+      {/* THE OTHER SIDE OF THE BOARD */}
+
+      <section className="boardTwo">
+        <div className="firstRowP">
+          <img id="storePic"></img>
+          <div className="storeInfo">
+            <h1>Store Name</h1>
+            <span>Vendor Name : Senam Kudjo Humado</span>
+            <span>Location : Bubuashie</span>
+            <span>Telephone : 0549088773</span>
+          </div>
+        </div>
+
+        <div className="secondRowP">
+          <h3>Add New Products To Your Store</h3>
+          <form className="firstRowForm">
+            <label for="productName"> Product Name : </label>
+            <input type="text" id="productName" />
+
+            <label for="category"> Category : </label>
+            <select name="category" id="category">
+              <option>Accessories</option>
+              <option>Clothes</option>
+              <option>Deliveries</option>
+              <option>Bags</option>
+              <option>Gadgets</option>
+              <option>Food</option>
+              <option>Skin Care</option>
+              <option>Services</option>
+            </select>
+
+            <label for="price"> Price : </label>
+            <input type="number" id="price" placeholder="eg. 16ghc" />
+            <label for="image" className="imageLabel">
+              Select Image of Product :
+            </label>
+            <input type="file" className="image" />
+
+            <input type="submit" className="submitBtn" />
+            <input type="reset" className="resetBtn" />
+          </form>
+        </div>
+
+        <div className="productList">
+          <h3>Product List</h3>
+          {/* <div className="headings"> */}
+          <table>
+            <tr className="tableRow">
+              <th>Product Name</th>
+              <th>Category</th>
+              <th>Price</th>
+              <th>Quantity</th>
+              <th>Created Time</th>
+              <th>Edit</th>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>{/* use DOM MANIPULATION TO MAKE THE INSERTIONS */}</tr>
+          </table>
+          {/* </div> */}
+        </div>
+      </section>
+    </section>
