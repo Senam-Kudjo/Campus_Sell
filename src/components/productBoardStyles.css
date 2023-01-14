@@ -1,0 +1,167 @@
+/* THE RIGHT SIDE OF THE DIVIDEND WHERE INFORMATION CONCERNING THE SELECTED TAB IS DISPLAYED */
+.productInfo {
+    width: 80%;
+    height: 100vh;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+
+::-webkit-scrollbar {
+    width: 0;
+}
+
+.firstRowP {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 220px;
+    /* background-color: rgb(224, 224, 224); */
+    background-color: white;
+    border-bottom: 0.5px solid grey;
+}
+
+#storePic {
+    margin: 50px;
+    height: 150px;
+    width: 200px;
+    /* background-color: white; */
+    background-color: rgb(224, 224, 224);
+    border-radius: 50%;
+    border: 3px solid orange;
+}
+
+.vendorInfo {
+    /* flex: 3; */
+    width: 100%;
+    height: 200px;
+    /* background-color: grey; */
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin: 10px;
+    padding-top: 10px;
+}
+
+.vendorInfo h1 {
+    font-size: 30px;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.vendorInfo span {
+    font-size: 18px;
+    padding: 10px;
+}
+
+.productAddition {
+    background-color: white;
+    height: 225px;
+    padding: 20px;
+    /* border-bottom: 0.5px solid grey; */
+    /* box-shadow: 3px 3px 3px aquamarine; */
+
+}
+
+.productAddition h1 {
+    font-size: 35px;
+    /* color: grey; */
+    font-weight: 500;
+}
+
+form {
+    display: flex;
+    flex-direction: row;
+    padding: 30px;
+    gap: 40px;
+    /* background-color: green; */
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+form div {
+    height: 0;
+    font-size: 17px;
+    margin-bottom: 25px;
+}
+
+label {
+    padding: 10px;
+}
+
+input {
+    width: 200px;
+    height: 30px;
+    border-radius: 5px;
+    border: 0.5px solid grey;
+    /* outline: 0.5px solid grey; */
+    padding: 10px;
+    font-size: 15px;
+    box-shadow: 2px 2px 2px grey;
+}
+
+#productImage {
+    padding: 2.5px;
+}
+
+.submitAndResetButtons input {
+    width: 100px;
+    border: 0;
+    /* background-color: cornflowerblue; */
+    margin-left: 22px;
+    cursor: pointer;
+}
+
+.submitAndResetButtons {
+    margin-left: 100px;
+}
+
+.submitButton {
+    background-color: cornflowerblue;
+    color: white;
+}
+
+.resetButton {
+    background-color: red;
+    color: white;
+}
+
+/* the product list tab */
+.productList {
+    /* outline: 1px solid red; */
+    height: 500px;
+    width: 100%;
+}
+
+.productList h3 {
+    font-size: 35px;
+    padding-left: 20px;
+    margin-top: 30px;
+    font-weight: 500;
+}
+
+.headings {
+    height: 50px;
+    background-color: grey;
+}
+
+.tableRow {
+    margin-top: 30px;
+    padding-top: 20px;
+    height: 50px;
+    border: 0;
+    background-color: aliceblue;
+}
+
+table {
+    background-color: white;
+    text-align: center;
+    /* outline: 1px solid red; */
+    margin-top: 10px;
+}
+
+th {
+    width: 200px;
+    background-color: rgb(206, 206, 206);
+    /* outline: 1px solid red; */
+}

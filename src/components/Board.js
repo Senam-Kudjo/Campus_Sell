@@ -18,6 +18,7 @@ const Board = () => {
         <Lottie animationData={box} style={{ width: 80 }} />
         <h3>Campus Mall</h3>
 
+        {/* THE START OF THE TABS ON THE LEFT SIDE OF THE SCREEN THAT CONTROLS THE RIGHT SIDE */}
         <div>
           <ul>
             <li>
@@ -42,9 +43,13 @@ const Board = () => {
               <Link to={"/settings"}>Settings</Link>
             </li>
           </ul>
+          {/* THE DOWNLOAD BUTTON */}
         </div>
         <button>Download Our App</button>
+        {/* END OF THE DOWNLOAD BUTTON */}
       </div>
+
+      {/* END OF THE LEFT TAB PAGE */}
 
       <div className="tabInfo">
         {/* the first row/line */}
