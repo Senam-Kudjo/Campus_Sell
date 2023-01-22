@@ -1,11 +1,11 @@
 import React from "react";
 import "../index.css";
-import Board from "../components/Board";
+import InboxBoard from "../components/inboxBoard";
 
 const Inbox = () => {
   return (
     <div>
-      <Board />
+      <InboxBoard />
     </div>
   );
 };

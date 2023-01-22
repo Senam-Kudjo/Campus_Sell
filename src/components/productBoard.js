@@ -6,6 +6,7 @@ import { TbMessages } from "react-icons/tb";
 import { FcSettings } from "react-icons/fc";
 import Lottie from "lottie-react";
 import box from "../assets/anime1.json";
+import storePic from "../assets/storePic.jpg";
 
 import "./productBoardStyles.css";
 import "./BoardStyles.css";
@@ -52,7 +53,7 @@ const productBoard = () => {
       {/* START OF THE RIGHT CONTAINER PAGE */}
       <section className="productInfo">
         <div className="firstRowP">
-          <img id="storePic"></img>
+          <img src={storePic} id="storePic"></img>
           <div className="vendorInfo">
             <h1>Store Name</h1>
             <span>Vendor Name : Senam Kudjo Humado</span>
@@ -62,7 +63,7 @@ const productBoard = () => {
         </div>
         {/* THE SECOND ROW OF THE PRODUCT INFO */}
         <div className="productAddition">
-          <h1>Add New Product to Your Store</h1>
+          <h1>Add New Products to Your Store</h1>
           <form>
             <div>
               <label for="productName">Product Name : </label>

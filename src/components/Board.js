@@ -1,6 +1,5 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Logo from "../assets/logo.png";
 import { GrOverview } from "react-icons/gr";
 import { MdOutlineProductionQuantityLimits } from "react-icons/md";
 import { TbMessages } from "react-icons/tb";
