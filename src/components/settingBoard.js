@@ -6,12 +6,11 @@ import { TbMessages } from "react-icons/tb";
 import { FcSettings } from "react-icons/fc";
 import Lottie from "lottie-react";
 import box from "../assets/anime1.json";
-import { IoIosSend } from "react-icons/io";
 
 import "./BoardStyles.css";
 import "./inboxBoardStyles.css";
 
-const InboxBoard = () => {
+const settingBoard = () => {
   return (
     <section className="hero">
       <div className="adminTab">
@@ -33,14 +32,14 @@ const InboxBoard = () => {
 
             <li>
               <TbMessages size={22} />
-              <Link to={"/"} className="activeTab">
-                Inbox
-              </Link>
+              <Link to={"/inbox"}>Inbox</Link>
             </li>
 
             <li>
               <FcSettings size={22} />
-              <Link to={"/settings"}>Settings</Link>
+              <Link to={"/"} className="activeTab">
+                Settings
+              </Link>
             </li>
           </ul>
           {/* THE DOWNLOAD BUTTON */}
@@ -51,26 +50,9 @@ const InboxBoard = () => {
 
       {/* END OF THE LEFT TAB PAGE */}
 
-      {/* MIDDLE LANE, SPECIFIC MESSAGE BOX */}
-      <div id="chatBox">
-        <div id="usernameHeader">Customer Name</div>
-        <div id="messageArea"></div>
-        <div id="textInputArea">
-          <input type="text" id="texting" />
-          <IoIosSend size={35} style={{ cursor: "pointer" }} id="sendIcon" />
-        </div>
-      </div>
-      {/* END OF MIDDLE LANE */}
-
-      {/* THIS IS THE LANE WHERE PEOPLE WHO HAVE CONTACTED HIM WILL BE */}
-      <div id="messagesFrom">
-        <div id="messageHeader"> Messages From Customers</div>
-        {/* <div className="messaged"></div>
-        <div className="messaged"></div>
-        <div className="messaged"></div> */}
-      </div>
+      {/* START OF SETTING SECTION */}
     </section>
   );
 };
 
-export default InboxBoard;
+export default settingBoard;

@@ -1,11 +1,11 @@
 import React from "react";
 import "../index.css";
-import Board from "../components/Board";
+import SettingBoard from "../components/settingBoard";
 
 const Settings = () => {
   return (
     <div>
-      <Board />
+      <SettingBoard />
     </div>
   );
 };
