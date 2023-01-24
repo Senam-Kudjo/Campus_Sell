@@ -8,7 +8,7 @@ import Lottie from "lottie-react";
 import box from "../assets/anime1.json";
 
 import "./BoardStyles.css";
-import "./inboxBoardStyles.css";
+import "./settingBoardStyles.css";
 
 const settingBoard = () => {
   return (
@@ -49,7 +49,37 @@ const settingBoard = () => {
       </div>
 
       {/* END OF THE LEFT TAB PAGE */}
+      <div id="settingsSection">
+        <h6>Change Profile Settings</h6>
+        <div className="change">
+          <label for="storeImage">Change Store Image : </label>
+          <input type="file" id="storeImage" name="storeImage" required />
 
+          <label for="storeName">Change Store Name : </label>
+          <input
+            type="text"
+            id="settingInput"
+            name="changeStoreName"
+            required
+          />
+
+          <label for="storeLocation">Change Store Location : </label>
+          <input
+            type="text"
+            id="settingInput"
+            name="changeStoreLocation"
+            required
+          />
+
+          <label for="storeContact">Change Store Contact : </label>
+          <input
+            type="tel"
+            id="settingInput"
+            name="changeStoreContact"
+            required
+          />
+        </div>
+      </div>
       {/* START OF SETTING SECTION */}
     </section>
   );

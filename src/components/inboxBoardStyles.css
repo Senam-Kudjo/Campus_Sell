@@ -1,6 +1,6 @@
 #chatBox {
     width: 50%;
-    background-color: antiquewhite;
+    background-color: rgb(255, 252, 248);
     height: 100vh;
     display: flex;
     flex-direction: column;
